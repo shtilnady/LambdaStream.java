@@ -10,7 +10,7 @@ public class Main {
 
         Operation divThirteen = (x) -> x%13 == 0;
         int[] num = {13, 22, 3, 52, 78, 48, 15293, 2197, 130000, 850};
-        for (int x: num) System.out.println(x + " " + divThirteen.divide(x));
+        Arrays.stream(num).forEach(x -> System.out.println(x + " " + divThirteen.divide(x)));
     }
 }
 
